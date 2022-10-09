@@ -1,0 +1,64 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+body {
+    /*Background images ideas*/
+    /*https://wallpaperaccess.com/full/5127274.png*/
+    /* https://i.pinimg.com/originals/2f/5c/c5/2f5cc5163100018a4e2670a01b77672e.gif */
+    /* https://i0.wp.com/windowscustomization.com/wp-content/uploads/2019/06/Cyberpunk-2077-Audio-Responsive.gif?fit=768%2C432&quality=80&strip=all&ssl=1&w=640) */
+    background-image: url(https://i0.wp.com/windowscustomization.com/wp-content/uploads/2019/06/Cyberpunk-2077-Audio-Responsive.gif?fit=768%2C432&quality=80&strip=all&ssl=1&w=640);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+/* navbar styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.title {
+    color: #fff;
+    padding: 10px 20px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 10px;
+}
+
+.btn {
+    color: #fff;
+    background: rgb(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    padding: 20px 20px;
+    color: #1b1b1b;
+}
+/* navbar styling */
+
+
+

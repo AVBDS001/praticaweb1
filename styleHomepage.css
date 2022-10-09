@@ -1,0 +1,171 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+    /*https://wallpaperaccess.com/full/5127274.png*/
+    /* https://i.pinimg.com/originals/2f/5c/c5/2f5cc5163100018a4e2670a01b77672e.gif */
+    /* https://i0.wp.com/windowscustomization.com/wp-content/uploads/2019/06/Cyberpunk-2077-Audio-Responsive.gif?fit=768%2C432&quality=80&strip=all&ssl=1&w=640) */
+}
+body {
+    background: #1b1b1b;
+    font-family: 'Montserrat', sans-serif;
+}
+/* navbar styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.title {
+    color: #fff;
+    padding: 10px 20px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 10px;
+}
+
+.btn {
+    color: #fff;
+    background: rgb(0, 0, 0, 0.0);
+    padding: 10px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    padding: 20px 20px;
+    color: #1b1b1b;
+}
+/* navbar styling */
+
+/* CSS GRID LAYOUT */
+h1 {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 0px solid #fff;
+    padding: 0px 20px 0px 20px;
+
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+
+    grid-template-areas: 
+    "sidenav item item"
+    "sidenav item item"
+    "sidenav item item"
+    "footer footer footer";
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* .sidenav {
+    max-width: 400px;
+    min-width: 200px;
+    height: 900px;
+    background-color: #333;
+    border-radius: 20px;
+    grid-area: "sidenav";
+    grid-row: sidenav;
+} */
+
+.item {
+    max-width: 400px;
+    min-width: 200px;
+    width: 300x;
+    height: 300px;
+    background-color: #333;
+    border-radius: 20px;
+    grid-area: "item";
+}
+
+.textItem {
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 5px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer {
+    width: auto;
+    height: 400px;
+    background-color: #333;
+    border-radius: 20px;
+    grid-area: "footer";
+    grid-column: footer;
+}
+
+@media (max-width: 820px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        border: 0px solid #fff;
+    
+        display: grid;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "footer footer";
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .sidenav {
+        height: 300px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        border: 0px solid #fff;
+    
+        display: grid;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+        "sidenav"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "footer";
+    }
+}
+
+
+
